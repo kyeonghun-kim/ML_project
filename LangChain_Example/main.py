@@ -4,9 +4,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain.output_parsers import JasonOutputParser
 from langchain_core.pydantic_v1 import BaseModel, Field
 
-
-# os.environ['OPENAI_API_KEY'] = 'sk-proj-maKE3jrJ6BnT40n6IY2NT3BlbkFJ6tfkzNGb2ruPHVklwJT0'
-
 llm = Ollama(model="gemma2:latest")
 
 class Topic(BaseModel):
